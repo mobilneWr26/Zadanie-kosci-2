@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#F5F5DC" android:layout_width="match_parent" android:layout_height="match_parent">
+    <!--  TYTUŁ GRY  -->
+    <TextView android:id="@+id/titleText" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Gra w kości! " android:textColor="#FFFFFF" android:textSize="28sp" android:gravity="center" android:padding="10dp" android:background="#A52A2A"/>
+    <!--  PRZYCISK RZUT  -->
+    <Button android:id="@+id/rzucButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="RZUĆ KOŚĆMI" android:textColor="#FFFFFF" android:backgroundTint="#D2691E" android:textSize="20sp" android:layout_gravity="center" android:layout_marginTop="10dp" android:layout_marginBottom="10dp"/>
+    <!--  UKŁAD HORYZONTALNY DLA KOŚCI  -->
+    <LinearLayout android:orientation="horizontal" android:background="#FFFFFF" android:padding="5dp" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/dice1" android:layout_width="0dp" android:layout_weight="1" android:layout_height="60dp" android:src="@drawable/question" android:layout_margin="9dp"/>
+        <ImageView android:id="@+id/dice2" android:layout_width="0dp" android:layout_weight="1" android:layout_height="60dp" android:src="@drawable/question" android:layout_margin="9dp"/>
+        <ImageView android:id="@+id/dice3" android:layout_width="0dp" android:layout_weight="1" android:layout_height="60dp" android:src="@drawable/question" android:layout_margin="9dp"/>
+        <ImageView android:id="@+id/dice4" android:layout_width="0dp" android:layout_weight="1" android:layout_height="60dp" android:src="@drawable/question" android:layout_margin="9dp"/>
+        <ImageView android:id="@+id/dice5" android:layout_width="0dp" android:layout_weight="1" android:layout_height="60dp" android:src="@drawable/question" android:layout_margin="9dp"/>
+    </LinearLayout>
+    <!--  WYNIK RZUTU  -->
+    <TextView android:id="@+id/wynikRzutuText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Wynik tego losowania: 0" android:textSize="20sp" android:layout_gravity="center" android:layout_marginTop="10dp"/>
+    <!--  WYNIK GRY  -->
+    <TextView android:id="@+id/wynikGryText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Wynik gry: 0" android:textSize="20sp" android:layout_gravity="center" android:layout_marginTop="10dp"/>
+    <!--  PRZYCISK RESET  -->
+    <Button android:id="@+id/resetButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="RESETUJ WYNIK" android:textColor="#FFFFFF" android:backgroundTint="#D2691E" android:textSize="20sp" android:layout_gravity="center" android:layout_marginTop="10dp"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/listViewPunkty"
+        android:layout_height="match_parent" />
+</LinearLayout>
