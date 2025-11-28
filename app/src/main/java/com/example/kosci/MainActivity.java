@@ -97,4 +97,13 @@ public class MainActivity extends AppCompatActivity {
             wynikGryText.setText("Wynik gry: 0");
         });
     }
+    private void obliczPunktyKategori(){
+        int[] policz = new int[7];
+        for (int i = 0; i < wartosciKosci.length; i++){
+            int liczba = wartosciKosci[i];
+            policz[liczba]++;
+        }
+        listaMozliwosci.clear();
+
+    }
 }
